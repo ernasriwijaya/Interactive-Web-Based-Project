@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Wellness for Dummies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>
+        <div id="sidebar">
+            <div class="toggle-btn" onclick="toggleSidebar(this)">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>  
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="quiz.html">Quiz</a></li>
+              <li><a href="words.html">Words</a></li>
+              <li><a href="puzzle.html">Puzzle</a></li>
+              <li><a href="feedbacks.html">Feedback</a></li>
+            </ul>
+          </div>
+
+    <div class="container">
+        <main>
+            
+            <h1>The <span id="header">Digital Wellness</span> Quiz</h1>
+            <br><br><br>
+            <p>test your general knowledge about the digital wellness:</p>
+            <div class="quiz-container">
+                <div id="quiz"></div>
+            </div>
+            <div id="progress-wrap">
+                <div id="progress-bar"></div>
+            </div>
+            <button id="previous">Previous Question</button>
+            <button id="next">Next Question</button>
+            <button id="submit">Submit</button>
+            <div id="results"></div>
+        </main>
+       
+    </div>
+</div>
+  
+
+<script src="question.js"></script>
+
+<script>
+    function toggleSidebar(ref){
+    document.getElementById("sidebar").classList.toggle('active');}
+    </script>
+
+</body>
+</html>
